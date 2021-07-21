@@ -33,6 +33,7 @@ Las columnas que se utilizaron para el modelo fueron las siguientes: "released_y
 
 Para generar las recomendaciones, se consideró que lo que se debía hacer era determinar qué tan similares eran entre sí los distintos shows. Para lograrlo era necesario determinar alguna medida de similitud, por lo que se decidió utilizar la distancia de coseno (definida como 1 - similaridad de coseno). La similaridad de coseno compara dos vectores de k componentes y nos arroja el coseno del ángulo entre ellos en ese espacio k-dimensional.
 La fórmula de similaridad de coseno es la siguiente:
+
 <a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;\text{similaridad}=\text{cos}(\theta)=\frac{\vec{u}\cdot\vec{v}}{\left&space;\|&space;\vec{u}&space;\right&space;\|\left&space;\|&space;\vec{v}&space;\right&space;\|}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\large&space;\text{similaridad}=\text{cos}(\theta)=\frac{\vec{u}\cdot\vec{v}}{\left&space;\|&space;\vec{u}&space;\right&space;\|\left&space;\|&space;\vec{v}&space;\right&space;\|}" title="\large \text{similaridad}=\text{cos}(\theta)=\frac{\vec{u}\cdot\vec{v}}{\left \| \vec{u} \right \|\left \| \vec{v} \right \|}" /></a>
 
 ## Explicación del modelo. 
