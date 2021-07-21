@@ -39,7 +39,7 @@ La fórmula de similaridad de coseno es la siguiente:
 ## Explicación del modelo. 
 
 * Para un usuario i se obtenían los M shows vistos. A partir de ellos, se accedía a la matriz de similaridad y se extraía la comparación de cada uno de los M shows respecto a la totalidad. De esta forma se obtenía una matriz de orden (M,N), denominada vistas_usuario. 
-* Se decidió incorporar un parámetro que regule la importancia de la antigüedad con que cada usuario vio un show en particular, asignando un mayor peso a las vistas más recientes. Para regular el comportamiento de estos pesos se introdujo un hiperparámetro denominado "c" en el modelo que tenía en cuenta la sensibilidad de los mismos.
+* Se decidió incorporar un parámetro que regule la importancia de la antigüedad con que cada usuario vio un show en particular, asignando un mayor peso a las vistas más recientes. Para regular el comportamiento de estos pesos se introdujo un hiperparámetro denominado "c" en el modelo que tenía en cuenta la sensibilidad de los mismos. Idealmente, este hiperparámetro debería ser ajustado aplicando el modelo sobre el conjunto de test a fin de mejorar los resultados que se obtengan.
 * Se procedió a multiplicar cada fila de la matriz de vistas de usuario por su correspondiente peso en función del show.
 * Luego se realizó una suma por columnas para obtener los puntajes correspondientes para cada uno de los N shows para ese usuario. 
 * A continuación se descartaron aquellos shows que el usuario ya había visto, y se los ordenó según su puntaje decreciente.
