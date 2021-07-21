@@ -1,17 +1,23 @@
 Sistema de recomendación de contenidos
 
+
 El desafío
+
 
 Desarrollar un sistema de recomendación para predecir qué nuevos contenidos, no previamente vistos, son más probables a ser elegidos para ver en Flow por un grupo de usuarios en base a su historial de visualizaciones.
 
+
 Exploración del Dataset
+
 
 Para comenzar, se realizó una exploración sobre los dos archivos que fueron proporcionados por la empresa Telecom. 
 En el primero, train.csv, se pudo observar la información con relación a los usuarios, es decir, su número de cuenta, los shows (películas, series, programas de T.V., etc.) y la fecha y hora en la que los vio. Este Dataset contaba con 3.657.801 registros.
 Por otro lado, el archivo metadata.csv nos aportaba información sobre los shows, como por ejemplo el título, el género, las palabras clave, los actores, etc. En total contenía 33.143 registros.
         -	https://github.com/Datathon2021/Recomendador
 
+
 Data 
+
 
 Atributos que se consideraron relevantes para el modelo (justificación)
 
@@ -21,6 +27,7 @@ Por último, se arreglaron varias categorías que estaban mal escritas o que les
 
 
 Modelo
+
 
 Matriz de similaridad usando distancia de coseno
 
