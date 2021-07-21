@@ -24,6 +24,8 @@ La fórmula de similaridad de coseno es la siguiente:
 
 $$K(\vec{X}, \vec{Y}) = <X, Y> / (||X||*||Y||)$$
 
+\sum_{n=1}^{N}n^{-s}
+
 De esta forma obtuvimos una matriz de NxN (siendo N la cantidad de asset_id únicos) con valores que iban del 0 al 1 y nos decían qué tan similar era un show a cada uno de los otros shows que teníamos.
 
 Una vez creada la matriz de similaridad pudimos filtrarla para quedarnos solo con las filas correspondientes a los M shows que había visto un usuario y sumar esas M filas para cada una de las N columnas. De esta forma, conseguimos N resultados que representaban qué tan similar era cada show disponible en la plataforma a todos los shows que el usuario había visto. Si, por ejemplo, una persona había visto 10 shows distintos y algún otro show S disponible en la plataforma era bastante similar a esos 10 shows ya vistos, el puntaje para S hubiera sido cercano a 10. 
