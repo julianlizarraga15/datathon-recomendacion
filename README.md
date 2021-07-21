@@ -22,7 +22,7 @@ Para generar las recomendaciones, consideramos que lo que debíamos hacer era de
 
 La fórmula de similaridad de coseno es la siguiente:
 
-K(X, Y) = <X, Y> / (||X||*||Y||)
+$$K(\vec{X}, \vec{Y}) = <X, Y> / (||X||*||Y||)$$
 
 De esta forma obtuvimos una matriz de NxN (siendo N la cantidad de asset_id únicos) con valores que iban del 0 al 1 y nos decían qué tan similar era un show a cada uno de los otros shows que teníamos.
 
