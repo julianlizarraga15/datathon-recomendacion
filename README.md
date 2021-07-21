@@ -24,7 +24,7 @@ La fórmula de similaridad de coseno es la siguiente:
 
 $$K(\vec{X}, \vec{Y}) = <X, Y> / (||X||*||Y||)$$
 
-\sum_{n=1}^{N}n^{-s}
+<a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;\sum_{n=1}^{N}n^{-s}" target="_blank"><img src="https://latex.codecogs.com/png.latex?\large&space;\sum_{n=1}^{N}n^{-s}" title="\large \sum_{n=1}^{N}n^{-s}" /></a>
 
 De esta forma obtuvimos una matriz de NxN (siendo N la cantidad de asset_id únicos) con valores que iban del 0 al 1 y nos decían qué tan similar era un show a cada uno de los otros shows que teníamos.
 
